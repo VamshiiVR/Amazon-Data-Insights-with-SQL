@@ -1,4 +1,4 @@
-# Amazon-Data-Insights-with-SQL
+# Amazon Data Insights with SQL
 Welcome to my deep dive into the Amazon e-commerce universe! This project is not just an exploration—it's a strategic analysis of a complex, data-rich environment akin to Amazon's vast operation. The analysis covers several key aspects of the business, including customer behavior, product performance, seller metrics, and overall sales trends. The queries provided solve specific business problems and provide actionable insights that can help drive decision-making.
 
 # Database Schema

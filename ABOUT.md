@@ -1,6 +1,26 @@
 # Amazon Data Insights with SQL
 Welcome to my deep dive into the Amazon e-commerce universe! This project is not just an exploration—it's a strategic analysis of a complex, data-rich environment akin to Amazon's vast operation. The analysis covers several key aspects of the business, including customer behavior, product performance, seller metrics, and overall sales trends. The queries provided solve specific business problems and provide actionable insights that can help drive decision-making.
 
+**RDMBS:** Postgresql
+
+**Approach:** Data Exploration 
+
+# Highlights
+- **Aggregations**: Functions like `SUM()`, `COUNT()`, and `AVG()` are heavily used to calculate total sales, order counts, return rates, and customer spend.
+  
+- **Ranking and Segmentation**: `RANK()` and `CASE` statements are employed to rank products and sellers, and segment customers based on different criteria such as sales volume or spending levels.
+
+- **Time-based Filtering**: `WHERE` clauses with `INTERVAL` are applied to focus on recent data (e.g., orders within the past year or six months).
+
+- **Joins**: Various types of joins (e.g., `INNER JOIN`, `LEFT JOIN`) are used to combine data from multiple tables, such as orders, customers, products, and returns.
+
+- **Subqueries and CTEs**: Common Table Expressions (`WITH` clauses) and subqueries are used to organize complex calculations, like finding top-selling products by region or customer order trends.
+
+- **Conditionals**: `HAVING` and `CASE` are used to filter results and categorize data based on specific conditions (e.g., identifying high-spending customers or top-ranked sellers).
+
+- **Sorting and Limiting**: Results are ordered and limited using `ORDER BY` and `LIMIT` to focus on top performers, best-selling products, or specific customer behaviors.
+
+
 # Database Schema
 The database consists of the following tables:
 
@@ -13,6 +33,8 @@ The database consists of the following tables:
 **Returns:** Records of products that have been returned by customers, including return ID, order ID, customer ID.
 
 **Sellers:** Information about sellers on Amazon's platform, including seller ID, seller name.
+
+![Amazon ERD](https://github.com/user-attachments/assets/2026fd46-1d96-4ca2-bf7c-07d0cf6eda9a)
 
 # Scenarios and Approach
 **Scenario 1:** Amazon's marketing team is planning a new loyalty rewards program and wants to 
